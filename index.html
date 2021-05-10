@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Library</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://kit.fontawesome.com/f762ba1f03.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <div class="container">
+    <p></p>
+    <button class="fab">Add</button>
+    <table></table>
+  </div>
+  <div class="overlay">
+    <form>
+      <span class="close">&times;</span>
+      <label>
+        Title
+        <input type="text" id="title" required />
+      </label>
+      <label>
+        Author
+        <input type="text" id="author" required />
+      </label>
+      <label>
+        Pages
+        <input type="number" id="pages" required />
+      </label>
+      <label>
+        <input type="checkbox" id="isRead" />
+        Finished Reading
+      </label>
+      <button class="btn-save">Save</button>
+      <button class="btn-reset" type="reset">Reset</button>
+    </form>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
