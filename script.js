@@ -1,13 +1,15 @@
-function Book(title, author, pages, isRead) {
-  this.title = title;
-  this.author = author;
-  this.pages = pages;
-  this.isRead = isRead;
-}
+class Book {
+  constructor(title, author, pages, isRead) {
+    this.title = title;
+    this.author = author;
+    this.pages = pages;
+    this.isRead = isRead;
+  }
 
-Book.prototype.toggleRead = function () {
-  this.isRead = !this.isRead;
-};
+  toggleRead() {
+    this.isRead = !this.isRead;
+  }
+}
 
 function ActionButton(text, handler, id, c) {
   this.text = text;
